@@ -1,4 +1,125 @@
-.icon_1{
-    background-color: black;
+body{
+  background-color: #080808;
+  margin: 0;
 }
+
+header{
+  background-color: #1B1B1B;
+  
+}
+
+.container_navi{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.navi_menu{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.navi_social{
+  list-style-type: none;
+  /* display: flex; */
+}
+
+.navi_item{
+  font-family: 'IBM Plex Mono';
+  color: #9C9C9C;
+  font-size: 14px;
+  margin-right: 72px;
+  margin-bottom: 28px;
+  margin-top: 24px;
+}
+
+.navi_item:last-child {
+  margin-right: 95px;
+}
+
+.social_link{
+  display: inline-block;
+}
+
+.social_svg{
+  width: 18px;
+  height: 17px;
+  margin-right: 24px;
+}
+
+.main_container{
+  display: flex;
+  margin-top: 132px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.about{
+height: 350px;
+align-content: center;
+}
+
+.name{
+  font-family: "Raleway";
+  font-size: 44px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.info_about{
+  font-family: 'IBM Plex Mono';
+  font-size: 14px;
+  color: #9C9C9C;
+  margin-bottom: 32px;
+}
+
+.start{
+  font-family: 'IBM Plex Mono';
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #62BA1B;
+}
+
+.container_img{
+  height: 350px;
+}
+
+.img{
+  width: 350px;
+  height: 350px;
+}
+
+.company_partnership{
+  margin-top: 56px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.company_item{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.company_tittle{
+  font-family: 'IBM Plex Mono';
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.company_logos{
+  width: 160px;
+  height: 60px;
+  margin-right: 30px;
+}
+
+.company_logos:last-child{
+  margin-right: 0px;
+}
+
+
+
 
