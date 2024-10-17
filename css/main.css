@@ -1,65 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #080808;
   margin: 0;
 }
 
-header {
-  background-color: #1b1b1b;
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.container_navi {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+a {
+  text-decoration: none;
+}
+
+/* =====HEADER===== */
+
+.container {
+  background-color: #1b1b1b;
+  border-radius: 4px;
+  width: 1150px;
   margin: 0 auto;
 }
 
-.navi_menu {
-  list-style-type: none;
+.container--header {
   display: flex;
-  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 96px 28px;
 }
 
-.navi_social {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
+/* =====NAV====== */
 
-.navi_item {
+.navi__item {
   font-family: "IBM Plex Mono";
   color: #9c9c9c;
   font-size: 14px;
+}
+
+.navi__item:not(:last-child) {
   margin-right: 72px;
-  margin-bottom: 28px;
-  margin-top: 24px;
 }
 
-.navi_item:last-child {
-  margin-right: 95px;
+/* =====SOCIAL-LINKS====== */
+
+.social__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social_link {
-  position: relative;
-  display: inline-block;
+.social__svg {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
 }
 
-.social_svg {
-  width: 18px;
-  height: 17px;
+.social__link:not(:last-child) {
   margin-right: 24px;
 }
 
-.main_container {
+.container--body {
+  width: 954px;
+  margin: 0 auto;
+}
+
+.container__about {
+  margin: 80px auto 56px;
   display: flex;
-  margin-top: 132px;
-  margin-left: 180px;
-  margin-right: 180px;
+  justify-content: space-around;
 }
 
 .about {
-  height: 350px;
-  align-content: center;
+  width: 492px;
+  align-content: space-around;
 }
 
 .name {
@@ -69,9 +89,10 @@ header {
   margin-bottom: 20px;
 }
 
-.info_about {
+.info__about {
   font-family: "IBM Plex Mono";
   font-size: 14px;
+  line-height: 24px;
   color: #9c9c9c;
   margin-bottom: 32px;
 }
@@ -81,9 +102,13 @@ header {
   font-size: 16px;
   color: #ffffff;
   background-color: #62ba1b;
+  padding: 24px 64px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
 }
 
-.container_img {
+.container__img {
   height: 350px;
 }
 
@@ -92,33 +117,28 @@ header {
   height: 350px;
 }
 
-.company_partnership {
-  margin-top: 56px;
-  margin-left: 180px;
-  margin-right: 180px;
-}
-
-.company_item {
+.company__item {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.company_tittle {
+.company__tittle {
   font-family: "IBM Plex Mono";
   font-size: 14px;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
-.company_logos {
+.company__logos {
   width: 160px;
   height: 60px;
 }
 
-.company_list {
+.company__list {
   margin-right: 30px;
 }
 
-.company_list:last-child {
+.company__list:last-child {
   margin-right: 0px;
 }

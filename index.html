@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My long way</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,98 +15,104 @@
   </head>
   <body>
     <header>
-      <div class="container_navi">
-        <nav class="header_navi">
-          <ul class="navi_menu">
-            <li class="navi_item">Home</li>
-            <li class="navi_item">Case Studies</li>
-            <li class="navi_item">Testimonials</li>
-            <li class="navi_item">Recent work</li>
-            <li class="navi_item">Get In Touch</li>
-          </ul>
+      <div class="container container--header">
+        <nav class="header__navi">
+          <a class="navi__item" href="">Home</a>
+          <a class="navi__item" href="">Case Studies</a>
+          <a class="navi__item" href="">Testimonials</a>
+          <a class="navi__item" href="">Recent work</a>
+          <a class="navi__item" href="">Get In Touch</a>
         </nav>
-        <ul class="navi_social">
-          <li class="social_link">
-            <svg class="social_svg">
-              <use href="./images/svg#LinkedIn"></use>
-            </svg>
+        <ul class="social__header">
+          <li class="social__link">
+            <a href="">
+              <svg class="social__svg">
+                <use href="./images/svg#Frame1"></use>
+              </svg>
+            </a>
           </li>
-          <li class="social_link">
-            <svg class="social_svg">
-              <use href="./images/svg#Behance"></use>
-            </svg>
+          <li class="social__link">
+            <a href="">
+              <svg class="social__svg">
+                <use href="./images/svg#Frame2"></use>
+              </svg>
+            </a>
           </li>
-
-          <li class="social_link">
-            <svg class="social_svg">
-              <use href="./images/svg#Twitter"></use>
-            </svg>
+          <li class="social__link">
+            <a href="">
+              <svg class="social__svg">
+                <use href="./images/svg#Frame3"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </header>
-
-    <main>
-      <section class="main_container">
+    <div class="container--body">
+      <section class="container__about">
         <div class="about">
           <h1 class="name">Syrovatka Dmytro</h1>
-          <p class="info_about">
+          <p class="info__about">
             Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <button class="start">Let’s get started</button>
         </div>
-        <div class="container_img">
+        <div class="container__img">
           <img class="img" src="./images/63706.png" alt="me" />
         </div>
       </section>
-    </main>
 
-    <div class="company_partnership">
-      <h3 class="company_tittle">Worked with</h3>
-      <ul class="company_item">
-        <li class="company_list">
-          <a href="https://www.google.de/">
-            <img
-              class="company_logos"
-              src="./images/Clickup.png"
-              alt="Stripe"
-            />
-          </a>
-        </li>
-        <li class="company_list">
-          <a href="">
-            <img
-              class="company_logos"
-              src="./images/Dropbox.png"
-              alt="Stripe"
-            />
-          </a>
-        </li>
-        <li class="company_list">
-          <a href="">
-            <img
-              class="company_logos"
-              src="./images/Elastic.png"
-              alt="Stripe"
-            />
-          </a>
-        </li>
-        <li class="company_list">
-          <a href="">
-            <img
-              class="company_logos"
-              src="./images/Paychex.png"
-              alt="Stripe"
-            />
-          </a>
-        </li>
-        <li class="company_list">
-          <a href="">
-            <img class="company_logos" src="./images/Stripe.png" alt="Stripe" />
-          </a>
-        </li>
-      </ul>
+      <div class="company__partnership">
+        <h3 class="company__tittle">Worked with</h3>
+        <ul class="company__item">
+          <li class="company__list">
+            <a href="https://www.google.de/">
+              <img
+                class="company__logos"
+                src="./images/Clickup.png"
+                alt="Stripe"
+              />
+            </a>
+          </li>
+          <li class="company__list">
+            <a href="">
+              <img
+                class="company__logos"
+                src="./images/Dropbox.png"
+                alt="Stripe"
+              />
+            </a>
+          </li>
+          <li class="company__list">
+            <a href="">
+              <img
+                class="company__logos"
+                src="./images/Elastic.png"
+                alt="Stripe"
+              />
+            </a>
+          </li>
+          <li class="company__list">
+            <a href="">
+              <img
+                class="company__logos"
+                src="./images/Paychex.png"
+                alt="Stripe"
+              />
+            </a>
+          </li>
+          <li class="company__list">
+            <a href="">
+              <img
+                class="company__logos"
+                src="./images/Stripe.png"
+                alt="Stripe"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
