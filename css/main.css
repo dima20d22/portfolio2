@@ -192,8 +192,9 @@ main {
 
 .experience {
 	display: flex;
-	align-content: center;
 	justify-content: space-between;
+	/* align-items: center;
+	height: 100vh; */
 	padding-top: 150px;
 }
 
@@ -267,4 +268,21 @@ main {
 	flex-grow: 1;
 	border-bottom: 0.5px dashed #ffffff;
 	margin: 0 10px;
+}
+
+/* =====testimonials====== */
+
+.testimonials {
+	background-color: white;
+}
+.testimonials__title {
+	font-family: 'Raleway';
+	font-size: 34px;
+	color: #ffffff;
+}
+
+.testimonials__text {
+	font-family: 'IBM Plex Mono';
+	font-size: 14px;
+	color: #9c9c9c;
 }
