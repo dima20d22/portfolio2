@@ -72,7 +72,8 @@ main {
 	font-size: 14px;
 }
 
-.navi__item:hover {
+.navi__item:hover,
+.navi__item:active {
 	color: #62ba1b;
 }
 
@@ -177,24 +178,22 @@ main {
 
 /* =====Case Studies===== */
 
-.container--work {
+.container__work {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	padding-right: 20px;
 }
 
-.container--education {
+.container__education {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
 
-.experience {
+.container--experience {
 	display: flex;
 	justify-content: space-between;
-	/* align-items: center;
-	height: 100vh; */
 	padding-top: 150px;
 }
 
@@ -221,11 +220,11 @@ main {
 	margin-bottom: 32px;
 }
 
-.work__link:hover .work--link__span {
+.work__link:hover .work__link__span {
 	color: #62ba1b;
 }
 
-.work--link__span {
+.work__link__span {
 	padding: 0 10px;
 }
 .work__line {
@@ -257,11 +256,11 @@ main {
 	margin-bottom: 32px;
 }
 
-.education__link:hover .education--link__span {
+.education__link:hover .education__link__span {
 	color: #62ba1b;
 }
 
-.education--link__span {
+.education__link__span {
 	padding: 0 10px;
 }
 .education__line {
