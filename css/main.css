@@ -102,10 +102,12 @@ main {
 	width: 24px;
 	height: 24px;
 	fill: #ffffff;
+	opacity: 0.3;
 }
 
 .social__svg:hover {
 	fill: #62ba1b;
+	opacity: 1;
 }
 
 /* =====BODY==== */
