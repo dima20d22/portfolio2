@@ -65,13 +65,13 @@ main {
 .container--experience {
   display: flex;
   justify-content: space-between;
-  padding-top: 150px;
+  padding-top: 110px;
 }
 
 .container--project {
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 94px;
   /* padding-left: 95px;
 	padding-right: 95px; */
 }
@@ -196,14 +196,15 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-right: 20px;
+  padding: 24px 24px 40px 24px;
 }
 
 .work__title {
   font-family: "IBM Plex Mono";
-  font-size: 16px;
+  font-size: 24px;
   color: #ffffff;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  padding-left: -4px;
 }
 
 .work__link {
@@ -240,13 +241,15 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 24px 24px 40px 24px;
 }
 
 .education__title {
   font-family: "IBM Plex Mono";
-  font-size: 16px;
+  font-size: 24px;
   color: #ffffff;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  padding-left: -4px;
 }
 
 .education__link {
@@ -304,6 +307,7 @@ main {
   font-family: "Raleway";
   font-size: 34px;
   color: #ffffff;
+  margin-bottom: 24px;
 }
 
 .project__text {
@@ -311,15 +315,26 @@ main {
   font-size: 14px;
   color: #9c9c9c;
   width: 570px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
-.prject__info {
+.project__info {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.project_list {
+  display: flex;
+}
+
+.card__info {
+  text-align: center;
 }
 
 .project__scroll_left {
-  display: inline-flex;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -337,19 +352,32 @@ main {
   height: 100%;
 }
 
-.project__info__name {
+.project__card {
+  padding: 4px 8px 12px;
+}
+
+.card__img {
+  margin-bottom: 18px;
+}
+
+.card__title {
+  display: flex;
+  justify-content: center;
   font-family: "Raleway";
   font-size: 20px;
   color: #ffffff;
+  margin-bottom: 14px;
 }
 
-.project__info__btn {
+.card__link {
   font-family: "Raleway";
   font-size: 20px;
   color: #ffffff;
   background-color: #3f8e00;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+  width: 140px;
   padding: 10px 14px;
 }
 
