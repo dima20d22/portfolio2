@@ -171,6 +171,7 @@ main {
 .hero__img {
   width: 350px;
   height: 350px;
+  border-radius: 50px;
 }
 
 /* =====COMPANY===== */
@@ -367,7 +368,9 @@ main {
 }
 
 .card__img {
-  width: 100%;
+  width: 240px;
+  height: 172px;
+  border-radius: 10px;
 }
 
 .card__info {
