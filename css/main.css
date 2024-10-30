@@ -463,6 +463,10 @@ main {
   border: none;
 }
 
+.modal__close:hover {
+  transform: scale(1.05);
+}
+
 .modal__close__svg {
   width: 20px;
   height: 20px;
@@ -542,10 +546,6 @@ main {
 }
 
 .modal__buttons__close {
-  display: fle;
-}
-
-.modal__buttons__close {
   font-family: "IBM Plex Mono";
   font-size: 14px;
   color: #ffffff;
@@ -554,6 +554,11 @@ main {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.modal__buttons__close:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .modal__buttons__submit {
@@ -566,6 +571,13 @@ main {
   border-radius: 10px;
   cursor: pointer;
   margin-left: 20px;
+  transition: background-color 0, 3s, transform 0, 3s;
+}
+
+.modal__buttons__submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-color: #ff9800;
 }
 
 .submit__svg {
