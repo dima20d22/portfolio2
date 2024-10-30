@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="/images/svg" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="./css/modal_window.css" />
   </head>
   <body>
     <header>
@@ -19,7 +20,7 @@
         <nav class="header__navi">
           <a class="navi__item" href="">Home</a>
           <a class="navi__item" href="./case_studies.html">Case Studies</a>
-          <!-- <a class="navi__item" href="./testimonials.html">Testimonials</a> -->
+
           <a class="navi__item" href="./resent_work.html">Recent work</a>
           <a class="navi__item" href="">Get In Touch</a>
         </nav>
@@ -116,8 +117,24 @@
         </div>
       </section>
     </main>
-    <div class="modal__backdrop">
-      <div class="modal__window"></div>
+    <div class="container modal__backdrop">
+      <div class="modal__window">
+        <div class="modal__box">
+          <p class="modal__box__title">Get in Touch</p>
+          <div>
+            <label for="Email"></label>
+            <input type="email" />
+          </div>
+          <div>
+            <label for="Mobile"></label>
+            <input type="tel" id="Mobile" name="Mobile" />
+          </div>
+          <div>
+            <p>Message</p>
+            <textarea name="" id=""></textarea>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
