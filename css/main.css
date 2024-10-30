@@ -444,17 +444,131 @@ main {
 .modal__title {
   font-size: 34px;
   color: #ffffff;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .modal__close {
-  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
   background-color: transparent;
   width: 20px;
   height: 20px;
   cursor: pointer;
+  line-height: 0;
+  padding: 0;
+  border: none;
 }
 
 .modal__close__svg {
   width: 20px;
   height: 20px;
+}
+
+/* ====== */
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__field {
+  display: flex;
+  flex-direction: column;
+
+  color: #9c9c9c;
+}
+
+.modal__field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.modal__window__subtille {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+}
+
+.modal__field__text {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px 12px 10px;
+}
+
+/* .modal__field__text:required {
+  border: 2px solid red;
+} */
+
+.modal__field__text:focus {
+  border: none;
+  outline: none;
+}
+
+.modal__field__text::placeholder {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  border: none;
+}
+
+.modal__field__message {
+  resize: none;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-top: 12px;
+  min-height: 160px;
+  overflow-y: auto;
+}
+
+.modal__field__message ::placeholder {
+  border: none;
+  outline: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: #9c9c9c;
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__buttons__close {
+  display: fle;
+}
+
+.modal__buttons__close {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #9c9c9c;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal__buttons__submit {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #008000;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.submit__svg {
+  width: 5px;
+  height: 10px;
 }

@@ -126,25 +126,52 @@
         <h2 class="modal__title">Get in Touch</h2>
         <form class="modal__form">
           <label class="modal__field" for="Name">
-            Name
-            <input type="text" />
+            <span class="modal__window__subtille">Name</span>
+
+            <input
+              class="modal__field__text"
+              type="text"
+              placeholder="please enter your name"
+              required
+            />
           </label>
           <label class="modal__field" for="Email">
-            Email
-            <input type="email" />
+            <span class="modal__window__subtille">Email</span>
+            <input
+              class="modal__field__text"
+              type="email"
+              placeholder="please enter your email"
+              required
+            />
           </label>
           <label class="modal__field" for="Mobile">
-            Mobile
-            <input type="tel" />
+            <span class="modal__window__subtille">Mobile</span>
+            <input
+              class="modal__field__text"
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="please enter your mobil"
+              required
+            />
           </label>
           <label class="modal__field" for="Message">
-            Message
-            <textarea name="Message"></textarea>
+            <span class="modal__window__subtille">Message</span>
+            <textarea
+              class="modal__field__message"
+              name="Message"
+              rows="5"
+              placeholder="message"
+            ></textarea>
           </label>
 
           <div class="modal__buttons">
-            <button type="button">Close</button>
-            <button type="submit">Submit</button>
+            <button class="modal__buttons__close" type="button">Close</button>
+            <button class="modal__buttons__submit" type="submit">
+              Submit
+              <svg class="submit__svg">
+                <use href="./images/svg#icon_submit"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
