@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="/images/svg" />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="./css/modal_window.css" />
   </head>
   <body>
     <header>
@@ -20,9 +19,10 @@
         <nav class="header__navi">
           <a class="navi__item" href="">Home</a>
           <a class="navi__item" href="./case_studies.html">Case Studies</a>
-
           <a class="navi__item" href="./resent_work.html">Recent work</a>
-          <a class="navi__item" href="">Get In Touch</a>
+          <a class="navi__item mod__win__link" id="open-modal-link"
+            >Get In Touch</a
+          >
         </nav>
         <ul class="social__header">
           <li class="social__item">
@@ -117,9 +117,18 @@
         </div>
       </section>
     </main>
+
     <div class="container modal__backdrop">
-      <div class="modal__window">
+      <div class="modal__window" id="my-modal">
         <div class="modal__box">
+          <button class="modal__box__close__btn" id="close-my-modal-btn">
+            <svg class="modal__box__close__svg">
+              <use
+                class="modal__box__link"
+                href="./images/svg#icon_close"
+              ></use>
+            </svg>
+          </button>
           <p class="modal__box__title">Get in Touch</p>
           <div>
             <label for="Email"></label>
@@ -129,12 +138,22 @@
             <label for="Mobile"></label>
             <input type="tel" id="Mobile" name="Mobile" />
           </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+            minus mollitia in eius modi rerum itaque, error repellendus
+            veritatis quasi cum sunt illum molestiae, dolorum, repellat et
+            voluptatibus? Veritatis, harum.
+          </p>
           <div>
             <p>Message</p>
             <textarea name="" id=""></textarea>
           </div>
+          <button>Close</button>
+          <button>Submit</button>
         </div>
       </div>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
