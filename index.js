@@ -1,28 +1,35 @@
-document
-  .getElementById("open-modal-link")
-  .addEventListener("click", function () {
-    document.getElementById("my-modal").classList.add("open");
-  });
+const modalNav = document.getElementById("modalNav");
+const modalBackdrop = document.querySelector(".modal__backdrop");
+const modalWindow = document.querySelector(".modal__window");
+const modalClose = document.querySelector(".modal__close");
+const modalCancel = document.querySelector(".modal__buttons button");
 
-document
-  .getElementById("close-my-modal-btn")
-  .addEventListener("click", function () {
-    document.getElementById("my-modal").classList.remove("open");
-  });
+let withinModal = false;
 
 window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    document.getElementById("my-modal").classList.remove("open");
+  if (e.key === "Escape") modalToggle();
+});
+
+modalNav.addEventListener("click", modalToggle);
+modalClose.addEventListener("click", modalToggle);
+modalCancel.addEventListener("click", (e) => {
+  e.preventDefault();
+  modalToggle();
+});
+
+modalWindow.addEventListener("click", () => {
+  withinModal = true;
+});
+
+modalBackdrop.addEventListener("click", (event) => {
+  if (withinModal) {
+    withinModal = false;
+    return;
   }
+  modalToggle();
 });
 
-document
-  .querySelector("#my-modal .modal__box")
-  .addEventListener("click", (event) => {
-    event.isClickWithinModal = true;
-  });
-
-document.getElementById("my-modal").addEventListener("click", (event) => {
-  if (event.isClickWithinModal) return;
-  event.currentTarget.classList.remove("open");
-});
+function modalToggle() {
+  console.log("aaaaaaaaaaaaaaaa");
+  modalBackdrop.classList.toggle("open");
+}

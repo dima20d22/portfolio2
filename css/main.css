@@ -1,7 +1,18 @@
 * {
+  font-family: "Raleway";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 body {
@@ -82,6 +93,7 @@ main {
   font-family: "IBM Plex Mono";
   color: #9c9c9c;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .navi__item:hover,
@@ -132,7 +144,6 @@ main {
 }
 
 .hero__title {
-  font-family: "Raleway";
   font-size: 44px;
   color: #ffffff;
   margin-bottom: 20px;
@@ -288,7 +299,6 @@ main {
   background-color: white;
 }
 .testimonials__title {
-  font-family: "Raleway";
   font-size: 34px;
   color: #ffffff;
 }
@@ -304,7 +314,6 @@ main {
 .project__title {
   display: flex;
   justify-content: center;
-  font-family: "Raleway";
   font-size: 34px;
   color: #ffffff;
   margin-bottom: 24px;
@@ -329,13 +338,12 @@ main {
 
 .project_list {
   display: flex;
+  justify-content: space-between;
+  width: 760px;
+  margin: 0 20px;
 }
 
-.card__info {
-  text-align: center;
-}
-
-.project__scroll_left {
+.project__scroll {
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -354,25 +362,29 @@ main {
 }
 
 .project__card {
-  padding: 4px 8px 12px;
+  border: 2px solid #9c9c9c;
+  border-radius: 12px;
 }
 
 .card__img {
-  margin-bottom: 18px;
+  width: 100%;
+}
+
+.card__info {
+  padding: 16px 0 12px;
+  text-align: center;
 }
 
 .card__title {
   display: flex;
   justify-content: center;
-  font-family: "Raleway";
   font-size: 20px;
   color: #ffffff;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .card__link {
-  font-family: "Raleway";
-  font-size: 20px;
+  font-size: 14px;
   color: #ffffff;
   background-color: #3f8e00;
   border: none;
@@ -380,15 +392,6 @@ main {
   cursor: pointer;
   width: 140px;
   padding: 10px 14px;
-}
-
-.project__scroll_right {
-  display: inline-flex;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
 }
 
 .scroll_right__svg {
@@ -403,14 +406,13 @@ main {
 
 /* ===========modal window========= */
 
-.modal__window {
-  display: grid;
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 100;
   overflow-y: auto;
@@ -420,36 +422,31 @@ main {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal__window.open {
+.open {
   visibility: visible;
   opacity: 1;
 }
 
-.modal__window.open .modal__box {
-  transform: scale(1);
-}
-
-.modal__box {
+.modal__window {
   position: relative;
-  max-width: 508px;
+  width: 508px;
   padding: 24px 40px;
   background-color: #1b1b1b;
   border-radius: 20px;
   transform: scale(0);
-  transition: transform 0.2s;
+  transition: transform ease-in-out 0.2s;
 }
 
-.modal__box__title {
-  font-family: "Raleway";
+.open .modal__window {
+  transform: scale(1);
+}
+
+.modal__title {
   font-size: 34px;
   color: #ffffff;
 }
 
-.mod__win__link {
-  cursor: pointer;
-}
-
-.modal__box__close__btn {
+.modal__close {
   border: none;
   background-color: transparent;
   width: 20px;
@@ -457,7 +454,7 @@ main {
   cursor: pointer;
 }
 
-.modal__box__close__svg {
+.modal__close__svg {
   width: 20px;
   height: 20px;
 }

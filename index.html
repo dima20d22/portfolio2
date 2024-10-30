@@ -14,15 +14,13 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="noselect">
       <div class="container container--header">
         <nav class="header__navi">
           <a class="navi__item" href="">Home</a>
           <a class="navi__item" href="./case_studies.html">Case Studies</a>
           <a class="navi__item" href="./resent_work.html">Recent work</a>
-          <a class="navi__item mod__win__link" id="open-modal-link"
-            >Get In Touch</a
-          >
+          <a class="navi__item" id="modalNav">Get In Touch</a>
         </nav>
         <ul class="social__header">
           <li class="social__item">
@@ -118,39 +116,37 @@
       </section>
     </main>
 
-    <div class="container modal__backdrop">
-      <div class="modal__window" id="my-modal">
-        <div class="modal__box">
-          <button class="modal__box__close__btn" id="close-my-modal-btn">
-            <svg class="modal__box__close__svg">
-              <use
-                class="modal__box__link"
-                href="./images/svg#icon_close"
-              ></use>
-            </svg>
-          </button>
-          <p class="modal__box__title">Get in Touch</p>
-          <div>
-            <label for="Email"></label>
+    <div class="modal__backdrop noselect">
+      <div class="modal__window">
+        <button class="modal__close" id="modalClose">
+          <svg class="modal__close__svg">
+            <use href="./images/svg#icon_close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Get in Touch</h2>
+        <form class="modal__form">
+          <label class="modal__field" for="Name">
+            Name
+            <input type="text" />
+          </label>
+          <label class="modal__field" for="Email">
+            Email
             <input type="email" />
+          </label>
+          <label class="modal__field" for="Mobile">
+            Mobile
+            <input type="tel" />
+          </label>
+          <label class="modal__field" for="Message">
+            Message
+            <textarea name="Message"></textarea>
+          </label>
+
+          <div class="modal__buttons">
+            <button type="button">Close</button>
+            <button type="submit">Submit</button>
           </div>
-          <div>
-            <label for="Mobile"></label>
-            <input type="tel" id="Mobile" name="Mobile" />
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            minus mollitia in eius modi rerum itaque, error repellendus
-            veritatis quasi cum sunt illum molestiae, dolorum, repellat et
-            voluptatibus? Veritatis, harum.
-          </p>
-          <div>
-            <p>Message</p>
-            <textarea name="" id=""></textarea>
-          </div>
-          <button>Close</button>
-          <button>Submit</button>
-        </div>
+        </form>
       </div>
     </div>
 
