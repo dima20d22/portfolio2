@@ -75,7 +75,7 @@ main {
 
 .container--experience {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding-top: 110px;
 }
 
@@ -203,6 +203,19 @@ main {
 }
 
 /* =====Case Studies===== */
+
+.experience__title {
+  font-size: 34px;
+  text-align: center;
+  color: #ffffff;
+
+  margin: 10px 0 24px;
+}
+
+.experience__box {
+  display: flex;
+  justify-content: space-between;
+}
 
 .experience__work {
   display: flex;
