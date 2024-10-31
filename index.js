@@ -30,6 +30,6 @@ modalBackdrop.addEventListener("click", (event) => {
 });
 
 function modalToggle() {
-  console.log("aaaaaaaaaaaaaaaa");
   modalBackdrop.classList.toggle("open");
+  modalNav.classList.toggle("navi__item--active")
 }

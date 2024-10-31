@@ -96,6 +96,10 @@ main {
   cursor: pointer;
 }
 
+.navi__item--active {
+  color: #62ba1b;
+}
+
 .navi__item:hover,
 .navi__item:active {
   color: #62ba1b;
