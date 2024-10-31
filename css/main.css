@@ -398,6 +398,10 @@ main {
   border-radius: 12px;
 }
 
+.project__card:hover {
+  transform: scale(1.05);
+}
+
 .card__img {
   width: 240px;
   height: 172px;
