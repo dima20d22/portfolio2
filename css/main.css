@@ -5,16 +5,6 @@
   box-sizing: border-box;
 }
 
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
 body {
   background-color: #080808;
   margin: 0;
@@ -27,11 +17,24 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
-
-/* =====HEADER===== */
 
 header {
   position: fixed;
@@ -44,72 +47,21 @@ header {
   transform: translateX(-50%);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 100vh;
-}
-
-.container {
-  width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.container--header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container--hero {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 152px;
-}
-
-.container--partnerships {
-  padding-top: 56px;
-}
-
-.container--experience {
-  display: flex;
-  flex-direction: column;
-  padding-top: 110px;
-}
-
-.container--project {
-  display: flex;
-  flex-direction: column;
-  padding-top: 120px;
-  /* padding-left: 95px;
-	padding-right: 95px; */
-}
-
-/* =====NAV====== */
-
 .navi__item {
   font-family: "IBM Plex Mono";
   color: #9c9c9c;
   font-size: 14px;
   cursor: pointer;
 }
-
 .navi__item--active {
   color: #62ba1b;
 }
-
-.navi__item:hover,
-.navi__item:active {
+.navi__item:hover, .navi__item:active {
   color: #62ba1b;
 }
-
 .navi__item:not(:last-child) {
   margin-right: 72px;
 }
-
-/* =====SOCIAL-LINKS====== */
 
 .social__header {
   display: flex;
@@ -132,15 +84,89 @@ main {
   fill: #ffffff;
   opacity: 0.3;
 }
-
 .social__svg:hover {
   fill: #62ba1b;
   opacity: 1;
 }
 
-/* =====BODY==== */
+.hero__button {
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #62ba1b;
+  padding: 24px 64px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
 
-/* =====ABOUT===== */
+.hero__button:hover {
+  transform: scale(1.05);
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  line-height: 0;
+  padding: 0;
+  border: none;
+}
+
+.modal__close:hover {
+  transform: scale(1.1);
+}
+
+.modal__close__svg {
+  width: 20px;
+  height: 20px;
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__buttons__close {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #9c9c9c;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal__buttons__close:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal__buttons__submit {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #008000;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0, 3s, transform 0, 3s;
+}
+
+.modal__buttons__submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-color: #ff9800;
+}
 
 .hero__info {
   align-content: center;
@@ -161,28 +187,11 @@ main {
   margin-bottom: 32px;
 }
 
-.hero__button {
-  font-family: "IBM Plex Mono";
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #62ba1b;
-  padding: 24px 64px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
-}
-
-.hero__button:hover {
-  transform: scale(1.05);
-}
-
 .hero__img {
   width: 350px;
   height: 350px;
   border-radius: 50px;
 }
-
-/* =====COMPANY===== */
 
 .partnerships__list {
   display: flex;
@@ -216,13 +225,10 @@ main {
   margin-right: 0px;
 }
 
-/* =====Case Studies===== */
-
 .experience__title {
   font-size: 34px;
   text-align: center;
   color: #ffffff;
-
   margin: 10px 0 24px;
 }
 
@@ -270,6 +276,7 @@ main {
   padding-left: 8px;
   padding-right: 10px;
 }
+
 .work__line {
   flex-grow: 1;
   border-bottom: 0.5px dashed #ffffff;
@@ -315,29 +322,12 @@ main {
   padding-left: 8px;
   padding-right: 10px;
 }
+
 .education__line {
   flex-grow: 1;
   border-bottom: 0.5px dashed #ffffff;
   margin: 0 10px;
 }
-
-/* =====testimonials====== */
-
-.testimonials {
-  background-color: white;
-}
-.testimonials__title {
-  font-size: 34px;
-  color: #ffffff;
-}
-
-.testimonials__text {
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  color: #9c9c9c;
-}
-
-/* =======Recent Work===== */
 
 .project__title {
   display: flex;
@@ -446,8 +436,6 @@ main {
   height: 100%;
 }
 
-/* ===========modal window========= */
-
 .modal__backdrop {
   position: fixed;
   top: 0;
@@ -490,32 +478,6 @@ main {
   margin-bottom: 8px;
 }
 
-.modal__close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 20px;
-  margin-top: 20px;
-  background-color: transparent;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  line-height: 0;
-  padding: 0;
-  border: none;
-}
-
-.modal__close:hover {
-  transform: scale(1.1);
-}
-
-.modal__close__svg {
-  width: 20px;
-  height: 20px;
-}
-
-/* ====== */
-
 .modal__form {
   display: flex;
   flex-direction: column;
@@ -524,7 +486,6 @@ main {
 .modal__field {
   display: flex;
   flex-direction: column;
-
   color: #9c9c9c;
 }
 
@@ -546,10 +507,6 @@ main {
   outline: none;
   padding: 10px 12px 10px;
 }
-
-/* .modal__field__text:required {
-  border: 2px solid red;
-} */
 
 .modal__field__text:focus {
   border: none;
@@ -582,47 +539,58 @@ main {
   color: #9c9c9c;
 }
 
-.modal__buttons {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.modal__buttons__close {
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #9c9c9c;
-  padding: 12px 34px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.modal__buttons__close:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.modal__buttons__submit {
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #008000;
-  padding: 12px 34px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-left: 20px;
-  transition: background-color 0, 3s, transform 0, 3s;
-}
-
-.modal__buttons__submit:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border-color: #ff9800;
-}
-
 .submit__svg {
   width: 5px;
   height: 10px;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container--hero {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 152px;
+}
+
+.container--partnerships {
+  padding-top: 56px;
+}
+
+.container--experience {
+  display: flex;
+  flex-direction: column;
+  padding-top: 110px;
+}
+
+.container--project {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                 supported by Chrome, Edge, Opera and Firefox */
+}/*# sourceMappingURL=main.css.map */

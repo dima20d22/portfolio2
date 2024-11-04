@@ -1,0 +1,21 @@
+// ======BASE=====
+
+@import "./base/base";
+@import "./base/header";
+
+// =========COMPONENST======
+
+@import "./components/btn";
+
+// ========LAYOUT========
+
+@import "./layout/hero";
+@import "./layout/partnerships";
+@import "./layout/experience";
+@import "./layout/recentwork";
+@import "./layout/modal-window";
+
+// ======UTILS=======
+@import "./utils/main";
+@import "./utils/containers";
+@import "./utils/noselect";
