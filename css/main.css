@@ -89,19 +89,30 @@ header {
   opacity: 1;
 }
 
-.hero__button {
+.button {
   font-family: "IBM Plex Mono";
   font-size: 16px;
   color: #ffffff;
   background-color: #62ba1b;
-  padding: 24px 64px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
   border: none;
+  padding: 24px 64px;
+  transition: background-color 0, 3s, transform 0, 3s;
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.hero__button:hover {
-  transform: scale(1.05);
+.modal__buttons__close {
+  background-color: #9c9c9c;
+  padding: 12px 34px;
+}
+
+.modal__buttons__submit {
+  padding: 12px 34px;
+  margin-left: 20px;
 }
 
 .modal__close {
@@ -118,54 +129,8 @@ header {
   padding: 0;
   border: none;
 }
-
 .modal__close:hover {
   transform: scale(1.1);
-}
-
-.modal__close__svg {
-  width: 20px;
-  height: 20px;
-}
-
-.modal__buttons {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.modal__buttons__close {
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #9c9c9c;
-  padding: 12px 34px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.modal__buttons__close:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.modal__buttons__submit {
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #008000;
-  padding: 12px 34px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-left: 20px;
-  transition: background-color 0, 3s, transform 0, 3s;
-}
-
-.modal__buttons__submit:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border-color: #ff9800;
 }
 
 .hero__info {
@@ -478,6 +443,11 @@ header {
   margin-bottom: 8px;
 }
 
+.modal__close__svg {
+  width: 20px;
+  height: 20px;
+}
+
 .modal__form {
   display: flex;
   flex-direction: column;
@@ -537,6 +507,11 @@ header {
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
   color: #9c9c9c;
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .submit__svg {
