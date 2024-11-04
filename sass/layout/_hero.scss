@@ -4,16 +4,16 @@
 }
 
 .hero__title {
+  font-family: "Relawey";
   font-size: 44px;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
 .hero__text {
-  font-family: "IBM Plex Mono";
   font-size: 14px;
   line-height: 24px;
-  color: #9c9c9c;
+  color: var(--greylish);
   margin-bottom: 32px;
 }
 

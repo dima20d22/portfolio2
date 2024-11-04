@@ -5,27 +5,26 @@
 }
 
 .partnerships__title {
-  font-family: "IBM Plex Mono";
   font-size: 14px;
-  color: #ffffff;
+  color: var(--whitelish);
   margin-bottom: 20px;
 }
 
 .partnerships__logos {
   width: 160px;
   height: 60px;
-  border: 1px solid #9c9c9c;
+  border: 1px solid var(--greylish);
   border-radius: 4px;
-}
 
-.partnerships__logos:hover {
-  border: 1px solid #62ba1b;
+  &:hover {
+    border: 1px solid var(--greenish);
+  }
 }
 
 .partnerships__items {
   margin-right: 30px;
-}
 
-.partnerships__items:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }

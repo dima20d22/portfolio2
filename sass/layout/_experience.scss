@@ -1,8 +1,7 @@
 .experience__title {
   font-size: 34px;
   text-align: center;
-  color: #ffffff;
-
+  color: var(--whitelish);
   margin: 10px 0 24px;
 }
 
@@ -21,7 +20,7 @@
 .work__title {
   font-family: "IBM Plex Mono";
   font-size: 24px;
-  color: #ffffff;
+  color: var(--whitelish);
   margin-bottom: 40px;
   padding-left: -4px;
 }
@@ -35,15 +34,17 @@
   font-family: "IBM Plex Mono";
   font-size: 14px;
   line-height: 24px;
-  color: #9c9c9c;
+  color: var(--greylish);
+
+  &:hover &__span {
+    color: var(--greenish);
+  }
 }
 
-.work__list:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.work__link:hover .work__link__span {
-  color: #62ba1b;
+.work__list {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .work__link__span {
@@ -52,7 +53,7 @@
 }
 .work__line {
   flex-grow: 1;
-  border-bottom: 0.5px dashed #ffffff;
+  border-bottom: 0.5px dashed var(--whitelish);
   margin: 0 10px;
 }
 
@@ -66,7 +67,7 @@
 .education__title {
   font-family: "IBM Plex Mono";
   font-size: 24px;
-  color: #ffffff;
+  color: var(--whitelish);
   margin-bottom: 40px;
   padding-left: -4px;
 }
@@ -80,15 +81,21 @@
   font-family: "IBM Plex Mono";
   font-size: 16px;
   line-height: 24px;
-  color: #9c9c9c;
+  color: var(--greylish);
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &:hover &__span {
+    color: var(--greenish);
+  }
 }
 
-.education__list:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.education__link:hover .education__link__span {
-  color: #62ba1b;
+.education__list {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .education__link__span {
@@ -97,6 +104,6 @@
 }
 .education__line {
   flex-grow: 1;
-  border-bottom: 0.5px dashed #ffffff;
+  border-bottom: 0.5px dashed var(--whitelish);
   margin: 0 10px;
 }

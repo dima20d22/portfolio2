@@ -1,4 +1,5 @@
 .project__title {
+  font-family: "Ralewey";
   display: flex;
   justify-content: center;
   font-size: 34px;
@@ -7,9 +8,8 @@
 }
 
 .project__text {
-  font-family: "IBM Plex Mono";
   font-size: 14px;
-  color: #9c9c9c;
+  color: var(--greylish);
   text-align: center;
   width: 570px;
   margin: 0 auto;
@@ -36,15 +36,15 @@
   background-color: transparent;
   width: 40px;
   height: 40px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .scroll_left__svg {
   width: 40px;
   height: 40px;
-}
-
-.project__scroll:hover {
-  transform: scale(1.2);
 }
 
 .scroll_left__link {
@@ -53,12 +53,12 @@
 }
 
 .project__card {
-  border: 2px solid #9c9c9c;
+  border: 2px solid var(--greylish);
   border-radius: 12px;
-}
 
-.project__card:hover {
-  transform: scale(1.05);
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .card__img {
@@ -76,23 +76,23 @@
   display: flex;
   justify-content: center;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--whitelish);
   margin-bottom: 16px;
 }
 
 .card__link {
   font-size: 14px;
-  color: #ffffff;
-  background-color: #3f8e00;
+  color: var(--whitelish);
+  background-color: var(--greenish);
   border: none;
   border-radius: 4px;
   cursor: pointer;
   width: 140px;
   padding: 10px 14px;
-}
 
-.card__link:hover {
-  transform: scale(1.05);
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .scroll_right__svg {

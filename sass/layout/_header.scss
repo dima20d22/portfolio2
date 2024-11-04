@@ -10,18 +10,17 @@ header {
 }
 
 .navi__item {
-  font-family: "IBM Plex Mono";
-  color: #9c9c9c;
+  color: var(--greylish);
   font-size: 14px;
   cursor: pointer;
 
   &--active {
-    color: #62ba1b;
+    color: var(--greenish);
   }
 
   &:hover,
   &:active {
-    color: #62ba1b;
+    color: var(--greenish);
   }
 
   &:not(:last-child) {
@@ -35,8 +34,10 @@ header {
   align-items: center;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 24px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
 }
 
 .social__link {
@@ -47,11 +48,11 @@ header {
 .social__svg {
   width: 24px;
   height: 24px;
-  fill: #ffffff;
+  fill: var(--greylish);
   opacity: 0.3;
 
   &:hover {
-    fill: #62ba1b;
+    fill: var(--greenish);
     opacity: 1;
   }
 }
