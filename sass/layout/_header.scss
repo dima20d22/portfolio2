@@ -10,8 +10,9 @@ header {
 }
 
 .navi__item {
-  color: var(--greylish);
+  color: var(--greyish);
   font-size: 14px;
+  font-weight: 400;
   cursor: pointer;
 
   &--active {
@@ -28,31 +29,33 @@ header {
   }
 }
 
-.social__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social__item {
-  &:not(:last-child) {
-    margin-right: 24px;
+.social {
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
 
-.social__link {
-  width: 100%;
-  height: 100%;
-}
+  &__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
 
-.social__svg {
-  width: 24px;
-  height: 24px;
-  fill: var(--greylish);
-  opacity: 0.3;
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
 
-  &:hover {
-    fill: var(--greenish);
-    opacity: 1;
+  &__svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--greyish);
+    opacity: 0.3;
+
+    &:hover {
+      fill: var(--greenish);
+      opacity: 1;
+    }
   }
 }

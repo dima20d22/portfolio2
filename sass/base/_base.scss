@@ -1,5 +1,5 @@
 * {
-  font-family: var(--main-font);
+  font-family: "IBM Plex Mono";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,8 +17,6 @@ ul {
   list-style: none;
 }
 
-// ======
-
 h1,
 h2,
 h3,
@@ -33,8 +31,6 @@ p {
 img {
   display: block;
 }
-
-// =====
 
 a {
   text-decoration: none;

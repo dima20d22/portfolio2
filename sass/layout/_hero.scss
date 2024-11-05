@@ -1,24 +1,28 @@
-.hero__info {
-  align-content: center;
-  width: 492px;
-}
+.hero {
+  &__info {
+    align-content: center;
+    width: 492px;
+  }
 
-.hero__title {
-  font-family: "Relawey";
-  font-size: 44px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
+  &__title {
+    font-family: "Relawey";
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--whiteish);
+    margin-bottom: 20px;
+  }
 
-.hero__text {
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--greylish);
-  margin-bottom: 32px;
-}
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--greyish);
+    margin-bottom: 32px;
+  }
 
-.hero__img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50px;
+  &__img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+  }
 }

@@ -1,7 +1,7 @@
 const modalNav = document.getElementById("modalNav");
 const modalBackdrop = document.querySelector(".modal__backdrop");
 const modalWindow = document.querySelector(".modal__window");
-const modalClose = document.querySelector(".modal__close");
+const modalClose = document.querySelector(".modal__close__cross");
 const modalCancel = document.querySelector(".modal__buttons button");
 
 let withinModal = false;
@@ -30,6 +30,6 @@ modalBackdrop.addEventListener("click", (event) => {
 });
 
 function modalToggle() {
-  modalBackdrop.classList.toggle("open");
-  modalNav.classList.toggle("navi__item--active")
+  modalBackdrop.classList.toggle("is-open");
+  modalNav.classList.toggle("navi__item--active");
 }
