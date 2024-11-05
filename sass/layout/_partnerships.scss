@@ -6,8 +6,7 @@
   }
 
   &__title {
-    font-size: 14px;
-    font-weight: 500;
+    @include font(14px, 500, 18px);
     color: var(--whiteish);
     margin-bottom: 20px;
   }

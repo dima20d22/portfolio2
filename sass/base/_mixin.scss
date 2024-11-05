@@ -1,0 +1,10 @@
+@mixin display($d, $jc) {
+  display: $d;
+  justify-content: $jc;
+}
+
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}

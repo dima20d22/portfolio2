@@ -4,14 +4,12 @@
   padding: 0 20px;
 
   &--header {
-    display: flex;
-    justify-content: space-between;
+    @include display(flex, space-between);
     align-items: center;
   }
 
   &--hero {
-    display: flex;
-    justify-content: space-between;
+    @include display(flex, space-between);
     padding-top: 152px;
   }
 

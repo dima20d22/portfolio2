@@ -50,6 +50,24 @@ main {
   --greenish: #3f8e00;
 }
 
+.project__card__img--project1 {
+  width: 240px;
+  height: 172px;
+  border-radius: 10px;
+}
+
+.project__card__img--project2 {
+  width: 240px;
+  height: 172px;
+  border-radius: 10px;
+}
+
+.project__card__img--project3 {
+  width: 240px;
+  height: 172px;
+  border-radius: 10px;
+}
+
 .button {
   font-size: 16px;
   font-weight: 400;
@@ -109,6 +127,7 @@ header {
   color: var(--greyish);
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
   cursor: pointer;
 }
 .navi__item--active {
@@ -149,7 +168,10 @@ header {
   width: 492px;
 }
 .hero__title {
-  font-family: "Relawey";
+  font-family: var(--secodary-font);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 52px;
   font-size: 44px;
   font-weight: 700;
   color: var(--whiteish);
@@ -158,6 +180,7 @@ header {
 .hero__text {
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
   line-height: 24px;
   color: var(--greyish);
   margin-bottom: 32px;
@@ -176,6 +199,7 @@ header {
 .partnerships__title {
   font-size: 14px;
   font-weight: 500;
+  line-height: 18px;
   color: var(--whiteish);
   margin-bottom: 20px;
 }
@@ -198,6 +222,7 @@ header {
 .experience__title {
   font-size: 34px;
   font-weight: 700;
+  line-height: 52px;
   text-align: center;
   color: var(--whiteish);
   margin: 10px 0 24px;
@@ -222,6 +247,9 @@ header {
 .work__title {
   font-size: 24px;
   font-weight: 500;
+  line-height: 18px;
+  font-size: 24px;
+  font-weight: 500;
   color: var(--whiteish);
   margin-bottom: 40px;
   padding-left: -4px;
@@ -232,6 +260,9 @@ header {
   align-items: center;
   width: 100%;
   height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -256,6 +287,7 @@ header {
 .education__title {
   font-size: 24px;
   font-weight: 500;
+  line-height: 18px;
   color: var(--whiteish);
   margin-bottom: 40px;
   padding-left: -4px;
@@ -266,8 +298,9 @@ header {
   align-items: center;
   width: 100%;
   height: 20px;
+  font-size: 14px;
   font-weight: 400;
-  font-size: 16px;
+  line-height: 24px;
   line-height: 24px;
   color: var(--greyish);
 }
@@ -296,12 +329,14 @@ header {
   justify-content: center;
   font-size: 34px;
   font-weight: 500;
+  line-height: 52px;
   color: var(--whiteish);
   margin-bottom: 24px;
 }
 .project__text {
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
   color: var(--greyish);
   text-align: center;
   width: 570px;
@@ -311,10 +346,10 @@ header {
 .project__info {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.project_list {
+.project__list {
   display: flex;
   justify-content: space-between;
   width: 760px;
@@ -330,17 +365,16 @@ header {
 .project__scroll:hover {
   transform: scale(1.2);
 }
+.project__scroll__svg {
+  width: 40px;
+  height: 40px;
+}
 .project__card {
   border: 2px solid var(--greyish);
   border-radius: 12px;
 }
 .project__card:hover {
   transform: scale(1.05);
-}
-.project__card__img {
-  width: 240px;
-  height: 172px;
-  border-radius: 10px;
 }
 .project__card__info {
   padding: 16px 0 12px;
@@ -351,12 +385,14 @@ header {
   justify-content: center;
   font-size: 20px;
   font-weight: 500;
+  line-height: 18px;
   color: var(--whiteish);
   margin-bottom: 16px;
 }
 .project__card__link {
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
   color: var(--whiteish);
   background-color: var(--greenish);
   border: none;
@@ -367,14 +403,6 @@ header {
 }
 .project__card__link:hover {
   transform: scale(1.05);
-}
-.project__scroll {
-  width: 100%;
-  height: 100%;
-}
-.project__scroll__svg {
-  width: 40px;
-  height: 40px;
 }
 
 .modal__backdrop {
@@ -405,6 +433,7 @@ header {
   font-family: var(--secondary-font);
   font-size: 34px;
   font-weight: 500;
+  line-height: 32px;
   color: var(--whiteish);
   text-align: center;
   margin-bottom: 8px;
@@ -429,6 +458,7 @@ header {
   font-family: monospace;
   font-size: 12px;
   font-weight: 500;
+  line-height: 18px;
   padding-left: 8px;
   padding-bottom: 4px;
 }
@@ -445,8 +475,9 @@ header {
 }
 .modal__field__text::placeholder {
   font-family: monospace;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 18px;
   border: none;
 }
 .modal__field__message {
@@ -464,8 +495,9 @@ header {
   border: none;
   outline: none;
   font-family: monospace;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 18px;
   color: var(--greyish);
 }
 .modal__buttons {

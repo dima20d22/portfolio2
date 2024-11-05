@@ -11,8 +11,7 @@ header {
 
 .navi__item {
   color: var(--greyish);
-  font-size: 14px;
-  font-weight: 400;
+  @include font(14px, 400, 24px);
   cursor: pointer;
 
   &--active {
@@ -31,8 +30,7 @@ header {
 
 .social {
   &__header {
-    display: flex;
-    justify-content: center;
+    @include display(flex, center);
     align-items: center;
   }
 

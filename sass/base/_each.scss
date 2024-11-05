@@ -1,0 +1,22 @@
+// @each $projects in project1, project2, project3 {
+//   .#{$projects} {
+//     // <img src="./images/project_pictures/#{$projects}.png" alt="">;
+//     background-image: url("./images/project_pictures/#{$projects}.png");
+//   }
+// }
+
+$projects: "project1", "project2", "project3";
+
+@each $project in $projects {
+  .project__card__img--#{$project} {
+    width: 240px;
+    height: 172px;
+    border-radius: 10px;
+  }
+}
+
+// &__card__img {
+//   width: 240px;
+//   height: 172px;
+//   border-radius: 10px;
+// }
