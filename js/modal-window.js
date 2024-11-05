@@ -1,7 +1,7 @@
 const modalNav = document.getElementById("modalNav");
 const modalBackdrop = document.querySelector(".modal__backdrop");
 const modalWindow = document.querySelector(".modal__window");
-const modalClose = document.querySelector(".modal__close__cross");
+const modalClose = document.querySelector(".modal__cross");
 const modalCancel = document.querySelector(".modal__buttons button");
 
 let withinModal = false;

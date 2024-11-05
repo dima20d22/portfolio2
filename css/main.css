@@ -94,7 +94,7 @@ main {
   margin-left: 20px;
 }
 
-.modal__close__cross {
+.modal__cross {
   position: absolute;
   top: 0;
   right: 0;
@@ -108,7 +108,7 @@ main {
   padding: 0;
   border: none;
 }
-.modal__close__cross:hover {
+.modal__cross:hover {
   transform: scale(1.1);
 }
 
@@ -438,7 +438,7 @@ header {
   text-align: center;
   margin-bottom: 8px;
 }
-.modal__close__svg {
+.modal__cross__svg {
   width: 20px;
   height: 20px;
 }
