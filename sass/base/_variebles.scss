@@ -1,6 +1,16 @@
 :root {
+  --main-font: "IBM Plex Mono";
   --secondary-font: "Ralewey";
   --greyish: #9c9c9c;
   --whiteish: #fff;
   --greenish: #3f8e00;
+  color-scheme: dark;
 }
+
+// .light {
+//   background-color: #fffaf0;
+//   --greyish: #080808;
+//   --whiteish: #080808;
+//   --greenish: #3f8e00;
+//   color-scheme: dark;
+// }

@@ -1,5 +1,5 @@
 * {
-  font-family: "IBM Plex Mono";
+  font-family: var(--main-font);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,10 +44,12 @@ main {
 }
 
 :root {
+  --main-font: "IBM Plex Mono";
   --secondary-font: "Ralewey";
   --greyish: #9c9c9c;
   --whiteish: #fff;
   --greenish: #3f8e00;
+  color-scheme: dark;
 }
 
 .project__card__img--project1 {
