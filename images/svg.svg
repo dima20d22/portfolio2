@@ -27,5 +27,8 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10" id="icon_submit">
     <path d="M5.1591 4.37364L1.69629 0.259206C1.40542 -0.086402 0.932855 -0.086402 0.641982 0.259206C0.35111 0.604814 0.35111 1.16631 0.641982 1.51191L3.57765 5L0.641982 8.4881C0.35111 8.8337 0.35111 9.3952 0.641982 9.7408C0.787417 9.91361 0.978249 10 1.16913 10C1.36001 10 1.55086 9.9136 1.69628 9.7408L5.15909 5.62637C5.44996 5.28076 5.44996 4.71927 5.15909 4.37366L5.1591 4.37364Z" fill="white"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="menu_burger">
+    <path d="M3.4375 15.3125H16.5625M3.4375 10.3125H16.5625M3.4375 5.3125H16.5625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>
        
