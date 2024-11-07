@@ -1,194 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./images/svg" />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <header class="noselect">
-      <div class="container container--header">
-        <button class="burger">
-          <svg class="burger__icon">
-            <use href="./images/svg.svg#menu_burger"></use>
-          </svg>
-        </button>
-        <nav class="header__navi">
-          <a class="navi__item navi__item--active" href="">Home</a>
-          <a class="navi__item" href="./case_studies.html">Case Studies</a>
-          <a class="navi__item" href="./resent_work.html">Recent work</a>
-          <a class="navi__item" id="modalNav">Get In Touch</a>
-        </nav>
-        <!-- <button id="themetoggle" class="theme-light">Theme Light</button> -->
-        <ul class="social__header">
-          <li class="social__item">
-            <a class="social__link" href="">
-              <svg class="social__svg">
-                <use href="./images/svg.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="">
-              <svg class="social__svg">
-                <use href="./images/svg.svg#behance"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="">
-              <svg class="social__svg">
-                <use href="./images/svg.svg#x"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="container container--hero">
-          <div class="hero__info">
-            <h1 class="hero__title">Your name here</h1>
-            <p class="hero__text">
-              Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
-            </p>
-            <button class="button hero__button">Let’s get started</button>
-          </div>
-          <img
-            class="hero__img"
-            src="./images/./portfolio/portfolio_pic.webp"
-            alt="portfolio pictures"
-          />
-        </div>
-      </section>
-      <section class="partnerships">
-        <div class="container container--partnerships">
-          <h2 class="partnerships__title">Worked with</h2>
-          <ul class="partnerships__list">
-            <li class="partnerships__items">
-              <a class="partnerships__link" href="">
-                <img
-                  class="partnerships__logos"
-                  src="./images/partnerships_logos/Clickup.png"
-                  alt="ClickUp"
-                />
-              </a>
-            </li>
-            <li class="partnerships__items">
-              <a href="">
-                <img
-                  class="partnerships__logos"
-                  src="./images/partnerships_logos/Dropbox.png"
-                  alt="Dropbox"
-                />
-              </a>
-            </li>
-            <li class="partnerships__items">
-              <a href="">
-                <img
-                  class="partnerships__logos"
-                  src="./images/partnerships_logos/Elastic.png"
-                  alt="Elastic"
-                />
-              </a>
-            </li>
-            <li class="partnerships__items">
-              <a href="">
-                <img
-                  class="partnerships__logos"
-                  src="./images/partnerships_logos/Paychex.png"
-                  alt="Paychex"
-                />
-              </a>
-            </li>
-            <li class="partnerships__items">
-              <a href="">
-                <img
-                  class="partnerships__logos"
-                  src="./images/partnerships_logos/Stripe.png"
-                  alt="Stripe"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./images/svg" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header class="noselect">
+			<div class="container container--header">
+				<!-- <button class="burger">
+					<svg class="burger__icon">
+						<use href="./images/svg.svg#menu_burger"></use>
+					</svg>
+				</button> -->
+				<button class="burger">
+					<span></span>
+				</button>
+				<nav class="header__navi">
+					<a class="navi__item navi__item--active" href="">Home</a>
+					<a class="navi__item" href="./case_studies.html">Case Studies</a>
+					<a class="navi__item" href="./resent_work.html">Recent work</a>
+					<a class="navi__item" id="modalNav">Get In Touch</a>
+				</nav>
+				<!-- <button id="themetoggle" class="theme-light">Theme Light</button> -->
+				<ul class="social__header">
+					<li class="social__item">
+						<a class="social__link" href="">
+							<svg class="social__svg">
+								<use href="./images/svg.svg#linkedin"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="">
+							<svg class="social__svg">
+								<use href="./images/svg.svg#behance"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link" href="">
+							<svg class="social__svg">
+								<use href="./images/svg.svg#x"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<section>
+				<div class="container container--hero">
+					<div class="hero__info">
+						<h1 class="hero__title">Your name here</h1>
+						<p class="hero__text">
+							Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua.
+						</p>
+						<button class="button hero__button">Let’s get started</button>
+					</div>
+					<picture>
+						<source
+							media="(min-width:1200px)"
+							srcset="
+								./images/./portfolio/portfolio_pic.webp 1x,
+								./images/./portfolio/portfolio_pic.webp 2x
+							"
+							type="image/webp"
+						/>
+						<source
+							media="(min-width:1200px)"
+							srcset="
+								./images/./portfolio/portfolio_pic.webp 1x,
+								./images/./portfolio/portfolio_pic.webp 2x
+							"
+						/>
 
-    <div class="modal__backdrop noselect">
-      <div class="modal__window">
-        <button class="modal__cross" id="modalClose">
-          <svg class="modal__cross__svg">
-            <use href="./images/svg.svg#icon_close"></use>
-          </svg>
-        </button>
-        <h2 class="modal__title">Get in Touch</h2>
-        <form class="modal__form">
-          <label class="modal__field" for="Name">
-            <span class="modal__window__subtille">Name</span>
+						<source
+							media="(min-width:768px)"
+							srcset="
+								./images/./portfolio/portfolio_pic.webp 1x,
+								./images/./portfolio/portfolio_pic.webp 2x
+							"
+							type="image/webp"
+						/>
+						<source
+							media="(min-width:768px)"
+							srcset="
+								./images/./portfolio/portfolio_pic.webp 1x,
+								./images/./portfolio/portfolio_pic.webp 2x
+							"
+						/>
 
-            <input
-              class="modal__field__text"
-              type="text"
-              placeholder="please enter your name"
-              required
-            />
-          </label>
-          <label class="modal__field" for="Email">
-            <span class="modal__window__subtille">Email</span>
-            <input
-              class="modal__field__text"
-              type="email"
-              placeholder="please enter your email"
-              required
-            />
-          </label>
-          <label class="modal__field" for="Mobile">
-            <span class="modal__window__subtille">Mobile</span>
-            <input
-              class="modal__field__text"
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="please enter your mobil"
-              required
-            />
-          </label>
-          <label class="modal__field" for="Message">
-            <span class="modal__window__subtille">Message</span>
-            <textarea
-              class="modal__field__message"
-              name="Message"
-              rows="5"
-              placeholder="message"
-            ></textarea>
-          </label>
+						<source
+							media="(min-width:200px)"
+							srcset="
+								./images/./portfolio/portfolio_pic.webp 1x,
+								./images/./portfolio/portfolio_pic.webp 2x
+							"
+							type="image/webp"
+						/>
+						<source
+							media="(min-width:200px)"
+							srcset="
+								./images/./portfolio/portfolio_pic.webp 1x,
+								./images/./portfolio/portfolio_pic.webp 2x
+							"
+						/>
 
-          <div class="modal__buttons">
-            <button class="button modal__buttons__close" type="button">
-              Close
-            </button>
-            <button class="button modal__buttons__submit" type="submit">
-              Submit
-              <svg class="modal__buttons__submit__svg">
-                <use href="./images/svg.svg#icon_submit"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </body>
-  <script src="./js/modal-window.js"></script>
-  <script src="./js/theme.js"></script>
+						<img
+							class="hero__img"
+							src="./images/./portfolio/portfolio_pic.webp"
+							alt="portfolio pictures"
+						/>
+					</picture>
+					<!-- <img
+						class="hero__img"
+						src="./images/./portfolio/portfolio_pic.webp"
+						alt="portfolio pictures"
+					/> -->
+				</div>
+			</section>
+			<section class="partnerships">
+				<div class="container container--partnerships">
+					<h2 class="partnerships__title">Worked with</h2>
+					<ul class="partnerships__list">
+						<li class="partnerships__items">
+							<a class="partnerships__link" href="">
+								<img
+									class="partnerships__logos"
+									src="./images/partnerships_logos/Clickup.png"
+									alt="ClickUp"
+								/>
+							</a>
+						</li>
+						<li class="partnerships__items">
+							<a href="">
+								<img
+									class="partnerships__logos"
+									src="./images/partnerships_logos/Dropbox.png"
+									alt="Dropbox"
+								/>
+							</a>
+						</li>
+						<li class="partnerships__items">
+							<a href="">
+								<img
+									class="partnerships__logos"
+									src="./images/partnerships_logos/Elastic.png"
+									alt="Elastic"
+								/>
+							</a>
+						</li>
+						<li class="partnerships__items">
+							<a href="">
+								<img
+									class="partnerships__logos"
+									src="./images/partnerships_logos/Paychex.png"
+									alt="Paychex"
+								/>
+							</a>
+						</li>
+						<li class="partnerships__items">
+							<a href="">
+								<img
+									class="partnerships__logos"
+									src="./images/partnerships_logos/Stripe.png"
+									alt="Stripe"
+								/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<div class="modal__backdrop noselect">
+			<div class="modal__window">
+				<button class="modal__cross" id="modalClose">
+					<svg class="modal__cross__svg">
+						<use href="./images/svg.svg#icon_close"></use>
+					</svg>
+				</button>
+				<h2 class="modal__title">Get in Touch</h2>
+				<form class="modal__form">
+					<label class="modal__field" for="Name">
+						<span class="modal__window__subtille">Name</span>
+
+						<input
+							class="modal__field__text"
+							type="text"
+							placeholder="please enter your name"
+							required
+						/>
+					</label>
+					<label class="modal__field" for="Email">
+						<span class="modal__window__subtille">Email</span>
+						<input
+							class="modal__field__text"
+							type="email"
+							placeholder="please enter your email"
+							required
+						/>
+					</label>
+					<label class="modal__field" for="Mobile">
+						<span class="modal__window__subtille">Mobile</span>
+						<input
+							class="modal__field__text"
+							type="tel"
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+							placeholder="please enter your mobil"
+							required
+						/>
+					</label>
+					<label class="modal__field" for="Message">
+						<span class="modal__window__subtille">Message</span>
+						<textarea
+							class="modal__field__message"
+							name="Message"
+							rows="5"
+							placeholder="message"
+						></textarea>
+					</label>
+
+					<div class="modal__buttons">
+						<button class="button modal__buttons__close" type="button">
+							Close
+						</button>
+						<button class="button modal__buttons__submit" type="submit">
+							Submit
+							<svg class="modal__buttons__submit__svg">
+								<use href="./images/svg.svg#icon_submit"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="./js/modal-window.js"></script>
+	<script src="./js/theme.js"></script>
+	<script src="./js/burger-window.js"></script>
 </html>

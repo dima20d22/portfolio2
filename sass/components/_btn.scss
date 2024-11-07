@@ -1,45 +1,72 @@
 .button {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--whiteish);
-  background-color: #62ba1b;
-  cursor: pointer;
-  border-radius: 10px;
-  border: none;
-  padding: 24px 64px;
-  transition: background-color 0, 3s, transform 0, 3s;
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--whiteish);
+	background-color: var(--greenish);
+	cursor: pointer;
+	border-radius: 10px;
+	border: none;
+	padding: 24px 64px;
+	transition: background-color 0, 3s, transform 0, 3s;
 
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  }
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	}
 }
 
 .modal__buttons__close {
-  background-color: var(--greyish);
-  padding: 12px 34px;
+	background-color: var(--greyish);
+	padding: 12px 34px;
 }
 
 .modal__buttons__submit {
-  padding: 12px 34px;
-  margin-left: 20px;
+	padding: 12px 34px;
+	margin-left: 20px;
 }
 
 .modal__cross {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 20px;
-  margin-top: 20px;
-  background-color: transparent;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  line-height: 0;
-  padding: 0;
-  border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 20px;
+	margin-top: 20px;
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	line-height: 0;
+	padding: 0;
+	border: none;
 
-  &:hover {
-    transform: scale(1.1);
-  }
+	&:hover {
+		transform: scale(1.1);
+	}
 }
+
+// .burger {
+// 	background-color: transparent;
+// 	border: none;
+// 	cursor: pointer;
+// 	width: 20px;
+// 	height: 20px;
+// 	padding: 0;
+// 	transition: background-color 0, 3s, transform 0, 3s;
+
+// 	&:hover,
+// 	&:focus {
+// 		fill: var(--greenish);
+// 		transform: scale(1.05);
+// 		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+// 	}
+
+// 	&__icon {
+// 		width: 20px;
+// 		height: 20px;
+
+// 		&:hover,
+// 		&:focus {
+// 			fill: var(--greenish);
+// 		}
+// 	}
+// }

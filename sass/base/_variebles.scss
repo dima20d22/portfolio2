@@ -1,10 +1,11 @@
 :root {
-  --main-font: "IBM Plex Mono";
-  --secondary-font: "Ralewey";
-  --greyish: #9c9c9c;
-  --whiteish: #fff;
-  --greenish: #3f8e00;
-  color-scheme: light;
+	--main-font: 'IBM Plex Mono';
+	--secondary-font: 'Ralewey';
+	--greyish: #9c9c9c;
+	--whiteish: #fff;
+	--greenish: #3f8e00;
+	color-scheme: light;
+	--mobile: (min-windt: 480px);
 }
 
 // .light {
