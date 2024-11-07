@@ -60,6 +60,19 @@
 	}
 }
 
+@media screen and (min-width: 1200px) {
+	.hero {
+		&__title {
+			@include font(44px, 700, 52px);
+		}
+
+		&__img {
+			max-width: 350px;
+			max-height: 350px;
+		}
+	}
+}
+
 // .hero {
 //   &__info {
 //     align-content: center;

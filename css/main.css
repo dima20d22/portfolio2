@@ -233,6 +233,7 @@ header {
   }
   .header__navi {
     position: relative;
+    height: 20px;
     display: block;
     padding: 0;
     background-color: transparent;
@@ -242,6 +243,17 @@ header {
   }
   .navi__item:not(:last-child) {
     margin-right: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    position: fixed;
+    border-radius: 0 0 8px 8px;
+    padding: 26px 0 26px;
+    width: 1150px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .hero__info {
@@ -299,6 +311,17 @@ header {
     width: 350px;
     height: 350px;
     order: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+  .hero__img {
+    max-width: 350px;
+    max-height: 350px;
   }
 }
 .partnerships__title {
@@ -360,6 +383,13 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
+  }
+  .partnerships__items {
+    margin: 0;
+    margin-right: 30px;
+  }
+  .partnerships__items:last-child {
+    margin-right: 0px;
   }
 }
 .experience__title {
@@ -661,6 +691,13 @@ header {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal__window {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+  }
+}
 .container {
   max-width: 480px;
   margin: 0 auto;
@@ -720,14 +757,14 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
   }
   .container--header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
   }
   .container--hero {
     display: flex;

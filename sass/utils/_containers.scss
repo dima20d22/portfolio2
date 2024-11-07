@@ -97,13 +97,13 @@
 
 @media screen and (min-width: 1200px) {
 	.container {
-		width: 1200px;
+		max-width: 960px;
 		margin: 0 auto;
 
 		&--header {
+			position: relative;
 			@include display(flex, space-between);
 			align-items: center;
-			height: 80px;
 		}
 
 		&--hero {

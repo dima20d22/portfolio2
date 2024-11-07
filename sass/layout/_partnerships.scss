@@ -80,6 +80,14 @@
 			margin: 0;
 			padding: 0;
 		}
+		&__items {
+			margin: 0;
+			margin-right: 30px;
+
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
 	}
 }
 

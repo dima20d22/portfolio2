@@ -134,6 +134,7 @@ header {
 
 	.header__navi {
 		position: relative;
+		height: 20px;
 		display: block;
 		padding: 0;
 		background-color: transparent;
@@ -145,6 +146,18 @@ header {
 		&:not(:last-child) {
 			margin-right: 24px;
 		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	header {
+		position: fixed;
+		border-radius: 0 0 8px 8px;
+		padding: 26px 0 26px;
+		width: 1150px;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 
