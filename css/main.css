@@ -115,6 +115,11 @@ main {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 767px) {
+  .button {
+    width: 308px;
+  }
+}
 header {
   position: relative;
   z-index: 52;
@@ -196,6 +201,9 @@ header {
 .navi__item:not(:last-child) {
   margin-bottom: 32px;
 }
+.navi__item--active {
+  color: var(--greenish);
+}
 
 .social__header {
   display: flex;
@@ -215,6 +223,27 @@ header {
   opacity: 1;
 }
 
+@media screen and (min-width: 767px) {
+  header {
+    height: 80px;
+    padding: 30px 0;
+  }
+  .burger {
+    display: none;
+  }
+  .header__navi {
+    position: relative;
+    display: block;
+    padding: 0;
+    background-color: transparent;
+  }
+  .navi__item {
+    margin-bottom: 0;
+  }
+  .navi__item:not(:last-child) {
+    margin-right: 24px;
+  }
+}
 .hero__info {
   display: flex;
   flex-direction: column;
@@ -240,11 +269,38 @@ header {
 .hero__img {
   margin: 0 auto;
   order: 1;
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 50px;
 }
 
+@media screen and (min-width: 767px) {
+  .hero__info {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 492px;
+    height: 350px;
+    order: 0;
+    padding-bottom: 24px;
+    padding-right: 14px;
+  }
+  .hero__title {
+    display: flex;
+    justify-content: flex-start;
+    font-family: var(--secodary-font);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    color: var(--whiteish);
+  }
+  .hero__img {
+    display: unset;
+    width: 350px;
+    height: 350px;
+    order: 0;
+  }
+}
 .partnerships__title {
   font-size: 14px;
   font-weight: 500;
@@ -274,6 +330,38 @@ header {
   border: 1px solid var(--greenish);
 }
 
+@media screen and (min-width: 767px) {
+  .partnerships__title {
+    text-align: left;
+  }
+  .partnerships__list {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  .partnerships__items {
+    margin-bottom: 0;
+    width: 160px;
+    margin-top: 24px;
+    margin-left: 124px;
+  }
+  .partnerships__items:nth-child(1) {
+    margin-left: 0;
+  }
+  .partnerships__items:nth-child(4n) {
+    margin-left: 0;
+  }
+  .partnerships__items:nth-child(-n+3) {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partnerships__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+}
 .experience__title {
   font-size: 34px;
   font-weight: 700;
@@ -567,6 +655,12 @@ header {
   transform: scale(1);
 }
 
+@media screen and (min-width: 767px) {
+  .modal__form {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
 .container {
   max-width: 480px;
   margin: 0 auto;
@@ -586,17 +680,72 @@ header {
 .container--partnerships {
   padding-top: 56px;
 }
+.container--experience {
+  display: flex;
+  flex-direction: column;
+  padding-top: 110px;
+}
+.container--project {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
+  }
+  .container--hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 48px;
+  }
+  .container--partnerships {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+  }
+  .container--experience {
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+  }
+  .container--project {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
     margin: 0 auto;
+  }
+  .container--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  .container--hero {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 152px;
+  }
+  .container--partnerships {
+    padding-top: 56px;
+  }
+  .container--experience {
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+  }
+  .container--project {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
   }
 }
 .noselect {

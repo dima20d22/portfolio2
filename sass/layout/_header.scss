@@ -86,6 +86,10 @@ header {
 	&:not(:last-child) {
 		margin-bottom: 32px;
 	}
+
+	&--active {
+		color: var(--greenish);
+	}
 }
 
 .social {
@@ -114,6 +118,32 @@ header {
 		&:hover {
 			fill: var(--greenish);
 			opacity: 1;
+		}
+	}
+}
+
+@media screen and (min-width: 767px) {
+	header {
+		height: 80px;
+		padding: 30px 0;
+	}
+
+	.burger {
+		display: none;
+	}
+
+	.header__navi {
+		position: relative;
+		display: block;
+		padding: 0;
+		background-color: transparent;
+	}
+
+	.navi__item {
+		margin-bottom: 0;
+
+		&:not(:last-child) {
+			margin-right: 24px;
 		}
 	}
 }
