@@ -16,12 +16,16 @@
 
 	&__window {
 		position: relative;
-		width: 508px;
+		width: 100vw;
+		height: 100vh;
 		padding: 24px 40px;
 		background-color: #1b1b1b;
-		border-radius: 20px;
 		transform: scale(0);
 		transition: transform ease-in-out 0.2s;
+
+		// width: 100vw;
+		// height: 100vh;
+		// border-radius: 20px;
 	}
 
 	&__title {
