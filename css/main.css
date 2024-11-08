@@ -9,6 +9,9 @@ body {
   background-color: #080808;
   margin: 0;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 ol,
 ul {
@@ -122,11 +125,9 @@ main {
 }
 header {
   position: relative;
-  z-index: 52;
   height: 60px;
   background-color: #1b1b1b;
-  border-radius: 0 0 8px 8px;
-  padding: 20px 0 20px;
+  padding: 20px 0;
 }
 
 .burger {
@@ -256,7 +257,7 @@ header {
   header {
     position: fixed;
     border-radius: 0 0 8px 8px;
-    padding: 26px 0 26px;
+    padding: 26px 0;
     width: 1150px;
     top: 0;
     left: 50%;
@@ -368,6 +369,7 @@ header {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 0;
+    margin-top: -24px;
   }
   .partnerships__items {
     margin-bottom: 0;
@@ -375,22 +377,11 @@ header {
     margin-top: 24px;
     margin-left: 124px;
   }
-  .partnerships__items:nth-child(1) {
+  .partnerships__items:nth-child(3n-2) {
     margin-left: 0;
-  }
-  .partnerships__items:nth-child(4n) {
-    margin-left: 0;
-  }
-  .partnerships__items:nth-child(-n+3) {
-    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .partnerships__list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
   .partnerships__items {
     margin: 0;
   }
