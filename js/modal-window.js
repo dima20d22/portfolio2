@@ -1,3 +1,4 @@
+const body = document.querySelector("body")
 const modalNav = document.getElementById("modalNav");
 const modalBackdrop = document.querySelector(".modal__backdrop");
 const modalWindow = document.querySelector(".modal__window");
@@ -32,4 +33,5 @@ modalBackdrop.addEventListener("click", (event) => {
 function modalToggle() {
   modalBackdrop.classList.toggle("is-open");
   modalNav.classList.toggle("navi__item--active");
+  body.classList.toggle("no-scroll")
 }

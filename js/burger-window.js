@@ -1,9 +1,7 @@
-// document.querySelector('.burger').addEventListener('click', function () {
-// 	this.classList.toggle('active')
-// 	document.querySelector('.header__navi').classList.toggle('open')
-// })
+const nav = document.querySelector('.header__navi')
 
 document.querySelector('.burger').addEventListener('click', function () {
 	this.classList.toggle('active')
-	document.querySelector('.header__navi').classList.toggle('opens')
+	nav.classList.toggle('opens')
+	body.classList.toggle("no-scroll")
 })
