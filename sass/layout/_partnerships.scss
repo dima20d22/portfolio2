@@ -1,94 +1,85 @@
 .partnerships {
-	&__title {
-		@include font(14px, 500, 18px);
-		color: var(--whiteish);
-		text-align: center;
-		margin-bottom: 36px;
-	}
+  &__title {
+    @include font(14px, 500, 18px);
+    color: var(--whiteish);
+    text-align: center;
+    margin-bottom: 36px;
+  }
 
-	&__list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 0;
-		margin-bottom: 40px;
-	}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 40px;
+  }
 
-	&__items {
-		margin-bottom: 40px;
-	}
+  &__items {
+    margin-bottom: 40px;
+  }
 
-	&__items:nth-last-child(-n + 2) {
-		margin-bottom: 0;
-	}
+  &__items:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 
-	&__logos {
-		border: 1px solid var(--greyish);
-		border-radius: 4px;
+  &__logos {
+    border: 1px solid var(--greyish);
+    border-radius: 4px;
 
-		&:hover {
-			border: 1px solid var(--greenish);
-		}
-	}
+    &:hover {
+      border: 1px solid var(--greenish);
+    }
+  }
 }
-// &__items {
-//   margin-right: 30px;
-
-//   &:last-child {
-//     margin-right: 0px;
-//   }
-// }
-// }
 
 @media screen and (min-width: 767px) {
-	.partnerships {
-		&__title {
-			text-align: left;
-		}
+  .partnerships {
+    &__title {
+      text-align: left;
+    }
 
-		&__list {
-			display: flex;
-			justify-content: flex-start;
-			margin-bottom: 0;
-		}
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 0;
+    }
 
-		&__items {
-			margin-bottom: 0;
-			width: 160px;
-			margin-top: 24px;
-			margin-left: 124px;
+    &__items {
+      margin-bottom: 0;
+      width: 160px;
+      margin-top: 24px;
+      margin-left: 124px;
 
-			&:nth-child(1) {
-				margin-left: 0;
-			}
+      &:nth-child(1) {
+        margin-left: 0;
+      }
 
-			&:nth-child(4n) {
-				margin-left: 0;
-			}
+      &:nth-child(4n) {
+        margin-left: 0;
+      }
 
-			&:nth-child(-n + 3) {
-				margin-top: 0;
-			}
-		}
-	}
+      &:nth-child(-n + 3) {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-	.partnerships {
-		&__list {
-			display: flex;
-			margin: 0;
-			padding: 0;
-		}
-		&__items {
-			margin: 0;
-			margin-right: 30px;
+  .partnerships {
+    &__list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    &__items {
+      margin: 0;
 
-			&:last-child {
-				margin-right: 0px;
-			}
-		}
-	}
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }
 
 // .partnerships {
